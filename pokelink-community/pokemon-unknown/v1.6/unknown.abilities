@@ -1,6 +1,5 @@
 {
   "abilities": [
-    null,
     "pokemon.ability.stench",
     "pokemon.ability.drizzle",
     "pokemon.ability.speed_boost",
