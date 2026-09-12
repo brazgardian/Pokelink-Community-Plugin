@@ -12,7 +12,7 @@
     "name": "Game.Name.PokemonUnknown",
     "generation": 8,
     "category": "Game.Category.supportedRomhacks",
-    "logo": "pokelink-community-dev:/logo.png",
+    "logo": "pokelink-community:/pokemon-unknown/logo.png",
     "lightTheme": {
         "color": "#ef4444",
         "darkText": true
