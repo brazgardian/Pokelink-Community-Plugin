@@ -286,7 +286,8 @@ def _make_evolution(fields: list, species_ids: dict) -> dict | None:
     param = fields[1]
     target = fields[2].removeprefix("SPECIES_")
 
-    if evo_type == "EVO_MEGA":
+    # Not possible in this ROM / unsupported by the app — skip entirely
+    if evo_type in ("EVO_MEGA", "EVO_RAINY_FOGGY_OW"):
         return None
     target_id = species_ids.get(target, 0)
     if not target_id:
@@ -331,7 +332,8 @@ def _make_evolution(fields: list, species_ids: dict) -> dict | None:
         conditions["pokemon.evolve.hasItem"] = {"string": _items.get_item_by_constant(param.removeprefix("ITEM_"))}
         conditions["pokemon.evolve.time"] = {"string": "timeOfDay.night"}
     elif evo_type == "EVO_TYPE_IN_PARTY":
-        conditions["pokemon.evolve.typedPokemonPresentInParty"] = {"string": "pokemon.type." + param.removeprefix("TYPE_").lower()}
+        conditions["pokemon.evolve.level"] = {"number": level}
+        conditions["pokemon.evolve.typedPokemonPresentInParty"] = {"string": "pokemon.type." + fields[3].removeprefix("TYPE_").lower()}
     elif evo_type == "EVO_OTHER_PARTY_MON":
         conditions["pokemon.evolve.presentInParty"] = {"string": _species_name(param.removeprefix("SPECIES_"))}
     elif evo_type == "EVO_LEVEL_ATK_GT_DEF":
@@ -359,8 +361,6 @@ def _make_evolution(fields: list, species_ids: dict) -> dict | None:
         conditions["pokemon.evolve.gender"] = {"string": "Gender.male"}
     elif evo_type in ("EVO_NATURE_HIGH", "EVO_NATURE_LOW"):
         conditions["pokemon.evolve.nature"] = {"string": "nature.high" if "HIGH" in evo_type else "nature.low"}
-    elif evo_type == "EVO_RAINY_FOGGY_OW":
-        conditions["pokemon.evolve.weather"] = {"string": "weather.rain"}
     elif evo_type == "EVO_LEVEL_SPECIFIC_TIME_RANGE":
         conditions["pokemon.evolve.level"] = {"number": level}
     else:

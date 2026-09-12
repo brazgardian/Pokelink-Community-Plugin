@@ -10244,8 +10244,11 @@
         {
           "to": 157,
           "conditions": {
+            "pokemon.evolve.level": {
+              "number": 36
+            },
             "pokemon.evolve.typedPokemonPresentInParty": {
-              "string": "pokemon.type.36"
+              "string": "pokemon.type.ghost"
             }
           },
           "fromForm": 0,
@@ -30524,8 +30527,11 @@
         {
           "to": 504,
           "conditions": {
+            "pokemon.evolve.level": {
+              "number": 36
+            },
             "pokemon.evolve.typedPokemonPresentInParty": {
-              "string": "pokemon.type.36"
+              "string": "pokemon.type.dark"
             }
           },
           "fromForm": 0,
@@ -32765,8 +32771,11 @@
         {
           "to": 550,
           "conditions": {
+            "pokemon.evolve.level": {
+              "number": 32
+            },
             "pokemon.evolve.typedPokemonPresentInParty": {
-              "string": "pokemon.type.32"
+              "string": "pokemon.type.fighting"
             }
           },
           "fromForm": 0,
@@ -37190,8 +37199,11 @@
         {
           "to": 629,
           "conditions": {
+            "pokemon.evolve.level": {
+              "number": 40
+            },
             "pokemon.evolve.typedPokemonPresentInParty": {
-              "string": "pokemon.type.40"
+              "string": "pokemon.type.psychic"
             }
           },
           "fromForm": 0,
@@ -41407,8 +41419,11 @@
         {
           "to": 681,
           "conditions": {
+            "pokemon.evolve.level": {
+              "number": 32
+            },
             "pokemon.evolve.typedPokemonPresentInParty": {
-              "string": "pokemon.type.32"
+              "string": "pokemon.type.dark"
             }
           },
           "fromForm": 0,
@@ -43259,8 +43274,11 @@
         {
           "to": 711,
           "conditions": {
+            "pokemon.evolve.level": {
+              "number": 40
+            },
             "pokemon.evolve.typedPokemonPresentInParty": {
-              "string": "pokemon.type.40"
+              "string": "pokemon.type.steel"
             }
           },
           "fromForm": 0,
@@ -43310,32 +43328,12 @@
         {
           "to": 712,
           "conditions": {
-            "pokemon.evolve.weather": {
-              "string": "weather.rain"
-            }
-          },
-          "fromForm": 0,
-          "toForm": 0
-        },
-        {
-          "to": 712,
-          "conditions": {
             "pokemon.evolve.useItem": {
               "string": "pokemon.item.moon_stone"
             }
           },
           "fromForm": 0,
           "toForm": 0
-        },
-        {
-          "to": 712,
-          "conditions": {
-            "pokemon.evolve.weather": {
-              "string": "weather.rain"
-            }
-          },
-          "fromForm": 1,
-          "toForm": 1
         },
         {
           "to": 712,
@@ -44066,8 +44064,11 @@
         {
           "to": 719,
           "conditions": {
+            "pokemon.evolve.level": {
+              "number": 37
+            },
             "pokemon.evolve.typedPokemonPresentInParty": {
-              "string": "pokemon.type.37"
+              "string": "pokemon.type.rock"
             }
           },
           "fromForm": 0,
@@ -44930,8 +44931,11 @@
         {
           "to": 734,
           "conditions": {
+            "pokemon.evolve.level": {
+              "number": 36
+            },
             "pokemon.evolve.typedPokemonPresentInParty": {
-              "string": "pokemon.type.36"
+              "string": "pokemon.type.fighting"
             }
           },
           "fromForm": 0,
