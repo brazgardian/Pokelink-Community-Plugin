@@ -30,31 +30,6 @@ _GROWTH_RATE = {
     "GROWTH_SLOW": 5,
 }
 
-_FORM_DISPLAY: dict = {
-    "A": "Alolan",
-    "G": "Galarian",
-    "H": "Hisuian",
-    "P": "Paldean",
-    "HEAT": "Heat",
-    "WASH": "Wash",
-    "FROST": "Frost",
-    "FAN": "Fan",
-    "MOW": "Mow",
-    "MEGA": "Mega",
-    "MEGA_X": "Mega X",
-    "MEGA_Y": "Mega Y",
-    "PRIMAL": "Primal",
-    "ORIGIN": "Origin",
-    "GIGA": "Gigantamax",
-}
-
-# Suffixes representing battle-only transformations. These forms use the BASE
-# Pokemon sprite rather than any form-specific sprite, so that Mega and Giga
-# forms are visually consistent (no Giga sprites exist in the national dex).
-_BATTLE_TRANSFORM_SUFFIXES: frozenset = frozenset({
-    "MEGA", "MEGA_X", "MEGA_Y", "PRIMAL",
-})
-
 # Maps species constant suffixes that don't clean_up to their national dex form key.
 _SUFFIX_TO_FORM_KEY: dict = {
     # Regional variant shorthands
@@ -442,7 +417,6 @@ def process():
         national_id = _find_national_id(species_name)
 
         stat_block = {
-            "name": _species_name(species_name),
             "gameId": species_id,
             "baseStats": {
                 "hp": si("baseHP"),
@@ -479,31 +453,13 @@ def process():
             if form_index is not None:
                 if strategy.startswith("fallback"):
                     print(f"\tWARNING: {species_name} matched via {strategy} — verify this is correct (available: {list(form_map.keys())})")
-                display = _FORM_DISPLAY.get(suffix, suffix.title())
-                form_key = f"PokemonUnknown.Form.{game_strings.clean_up(suffix)}"
-                translations.add_translation(form_key, display)
 
-                # For battle transformations (Mega, Primal) use the BASE entry sprites
-                # so they look identical to Giga forms — no form-specific sprite is shown.
-                # For all other forms copy the national form entry sprites directly
-                # (avoids __import overriding our custom types with national dex types).
-                if suffix in _BATTLE_TRANSFORM_SUFFIXES:
-                    sprite_raw = core_plugin.read_file(f"/pokemon/national/{national_id}.entry")
-                else:
-                    sprite_raw = core_plugin.read_file(f"/pokemon/national/{national_id}.{form_index}.entry")
-                national_sprites = {}
-                if sprite_raw:
-                    try:
-                        national_sprites = json.loads(sprite_raw).get("sprites", {})
-                    except Exception:
-                        pass
-
-                form_entry = {"form": form_index, "formName": form_key}
-                if national_sprites:
-                    form_entry["sprites"] = national_sprites
-                else:
-                    # Fallback: use __import if we couldn't get direct sprites
-                    form_entry["__import"] = {f"pokelink:/pokemon/national/{national_id}.{form_index}.entry": {"mergeArrays": False}}
+                # Always import from national dex form entry — no formName or name,
+                # the __import provides them (also covers Mega/Primal correctly).
+                form_entry = {
+                    "form": form_index,
+                    "__import": {f"pokelink:/pokemon/national/{national_id}.{form_index}.entry": {"FIXME_noDeepMerge": True}},
+                }
                 form_entry.update(stat_block)
 
                 # Form evolutions must live on the BASE entry (with fromForm set),
@@ -522,7 +478,8 @@ def process():
                 print(f"\tWARNING: {species_name} (suffix '{suffix}') not matched in national dex — available keys: {list(form_map.keys())}, using base sprite")
                 entry = {
                     "id": len(_entries) + 1,
-                    "__import": {f"pokelink:/pokemon/national/{national_id}.entry": {"mergeArrays": False}},
+                    "name": _species_name(species_name),
+                    "__import": {f"pokelink:/pokemon/national/{national_id}.entry": {"FIXME_noDeepMerge": True}},
                     **stat_block,
                 }
                 _entries.append(entry)
@@ -532,13 +489,14 @@ def process():
                 print(f"\tWARNING: {species_name} has no national dex mapping, using Unown fallback")
             entry = {
                 "id": len(_entries) + 1,
+                "name": _species_name(species_name),
                 **stat_block,
             }
             if national_id:
-                entry["__import"] = {f"pokelink:/pokemon/national/{national_id}.entry": {"mergeArrays": False}}
+                entry["__import"] = {f"pokelink:/pokemon/national/{national_id}.entry": {"FIXME_noDeepMerge": True}}
                 base_info_by_national_id[national_id] = (species_name, entry)
             else:
-                entry["__import"] = {"pokelink:/pokemon/national/201.entry": {"mergeArrays": False}}
+                entry["__import"] = {"pokelink:/pokemon/national/201.entry": {"FIXME_noDeepMerge": True}}
             _entries.append(entry)
 
     # Remap evolution targets: _make_evolution stored raw game species IDs in "to"
