@@ -366,6 +366,24 @@ def _make_evolution(fields: list, species_ids: dict) -> dict | None:
     return {"to": target_id, "conditions": conditions, "fromForm": 0, "toForm": 0}
 
 
+def _merge_duplicate_evolutions(evo_list: list) -> list:
+    """Merge evolutions sharing the same target into one entry, chaining each
+    additional path under pokemon.evolve.or.nested (the app renders this as 'or')."""
+    merged: list = []
+    by_target: dict = {}
+    for evo in evo_list:
+        target = evo["to"]
+        if target in by_target:
+            node = by_target[target]["conditions"]
+            while "pokemon.evolve.or" in node:
+                node = node["pokemon.evolve.or"]["nested"]
+            node["pokemon.evolve.or"] = {"nested": evo["conditions"]}
+        else:
+            by_target[target] = evo
+            merged.append(evo)
+    return merged
+
+
 def process():
     print("Processing Pokedex")
     global _entries, _species_lookup, _national_id_lookup, _species_to_dex_table
@@ -410,6 +428,7 @@ def process():
             evo = _make_evolution(evo_fields, species_ids)
             if evo:
                 evo_list.append(evo)
+        evo_list = _merge_duplicate_evolutions(evo_list)
 
         national_id = _find_national_id(species_name)
 

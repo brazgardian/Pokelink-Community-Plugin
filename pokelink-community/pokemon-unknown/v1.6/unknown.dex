@@ -6776,16 +6776,13 @@
           "conditions": {
             "pokemon.evolve.useItem": {
               "string": "pokemon.item.leaf_stone"
-            }
-          },
-          "fromForm": 1,
-          "toForm": 1
-        },
-        {
-          "to": 101,
-          "conditions": {
-            "pokemon.evolve.useItem": {
-              "string": "pokemon.item.thunder_stone"
+            },
+            "pokemon.evolve.or": {
+              "nested": {
+                "pokemon.evolve.useItem": {
+                  "string": "pokemon.item.thunder_stone"
+                }
+              }
             }
           },
           "fromForm": 1,
@@ -13655,19 +13652,16 @@
           "conditions": {
             "pokemon.evolve.useItem": {
               "string": "pokemon.item.dusk_stone"
-            }
-          },
-          "fromForm": 0,
-          "toForm": 0
-        },
-        {
-          "to": 473,
-          "conditions": {
-            "pokemon.evolve.hasItem": {
-              "string": "pokemon.item.razor_fang"
             },
-            "pokemon.evolve.time": {
-              "string": "timeOfDay.night"
+            "pokemon.evolve.or": {
+              "nested": {
+                "pokemon.evolve.hasItem": {
+                  "string": "pokemon.item.razor_fang"
+                },
+                "pokemon.evolve.time": {
+                  "string": "timeOfDay.night"
+                }
+              }
             }
           },
           "fromForm": 0,
@@ -14195,19 +14189,16 @@
           "conditions": {
             "pokemon.evolve.useItem": {
               "string": "pokemon.item.dusk_stone"
-            }
-          },
-          "fromForm": 0,
-          "toForm": 0
-        },
-        {
-          "to": 462,
-          "conditions": {
-            "pokemon.evolve.hasItem": {
-              "string": "pokemon.item.razor_claw"
             },
-            "pokemon.evolve.time": {
-              "string": "timeOfDay.night"
+            "pokemon.evolve.or": {
+              "nested": {
+                "pokemon.evolve.hasItem": {
+                  "string": "pokemon.item.razor_claw"
+                },
+                "pokemon.evolve.time": {
+                  "string": "timeOfDay.night"
+                }
+              }
             }
           },
           "fromForm": 0,
@@ -14218,19 +14209,16 @@
           "conditions": {
             "pokemon.evolve.useItem": {
               "string": "pokemon.item.dawn_stone"
-            }
-          },
-          "fromForm": 1,
-          "toForm": 0
-        },
-        {
-          "to": 964,
-          "conditions": {
-            "pokemon.evolve.hasItem": {
-              "string": "pokemon.item.razor_claw"
             },
-            "pokemon.evolve.time": {
-              "string": "timeOfDay.day"
+            "pokemon.evolve.or": {
+              "nested": {
+                "pokemon.evolve.hasItem": {
+                  "string": "pokemon.item.razor_claw"
+                },
+                "pokemon.evolve.time": {
+                  "string": "timeOfDay.day"
+                }
+              }
             }
           },
           "fromForm": 1,
@@ -26277,16 +26265,13 @@
           "conditions": {
             "pokemon.evolve.knowMove": {
               "string": "pokemon.move.mimic"
-            }
-          },
-          "fromForm": 0,
-          "toForm": 0
-        },
-        {
-          "to": 185,
-          "conditions": {
-            "pokemon.evolve.useItem": {
-              "string": "pokemon.item.leaf_stone"
+            },
+            "pokemon.evolve.or": {
+              "nested": {
+                "pokemon.evolve.useItem": {
+                  "string": "pokemon.item.leaf_stone"
+                }
+              }
             }
           },
           "fromForm": 0,
@@ -26339,16 +26324,13 @@
           "conditions": {
             "pokemon.evolve.knowMove": {
               "string": "pokemon.move.mimic"
-            }
-          },
-          "fromForm": 0,
-          "toForm": 0
-        },
-        {
-          "to": 122,
-          "conditions": {
-            "pokemon.evolve.useItem": {
-              "string": "pokemon.item.sun_stone"
+            },
+            "pokemon.evolve.or": {
+              "nested": {
+                "pokemon.evolve.useItem": {
+                  "string": "pokemon.item.sun_stone"
+                }
+              }
             }
           },
           "fromForm": 0,
@@ -26410,19 +26392,16 @@
           "conditions": {
             "pokemon.evolve.useItem": {
               "string": "pokemon.item.shiny_stone"
-            }
-          },
-          "fromForm": 0,
-          "toForm": 0
-        },
-        {
-          "to": 113,
-          "conditions": {
-            "pokemon.evolve.hasItem": {
-              "string": "pokemon.item.oval_stone"
             },
-            "pokemon.evolve.time": {
-              "string": "timeOfDay.day"
+            "pokemon.evolve.or": {
+              "nested": {
+                "pokemon.evolve.hasItem": {
+                  "string": "pokemon.item.oval_stone"
+                },
+                "pokemon.evolve.time": {
+                  "string": "timeOfDay.day"
+                }
+              }
             }
           },
           "fromForm": 0,
@@ -27340,16 +27319,13 @@
           "conditions": {
             "pokemon.evolve.presentInParty": {
               "string": "pokemon.species.remoraid"
-            }
-          },
-          "fromForm": 0,
-          "toForm": 0
-        },
-        {
-          "to": 226,
-          "conditions": {
-            "pokemon.evolve.useItem": {
-              "string": "pokemon.item.water_stone"
+            },
+            "pokemon.evolve.or": {
+              "nested": {
+                "pokemon.evolve.useItem": {
+                  "string": "pokemon.item.water_stone"
+                }
+              }
             }
           },
           "fromForm": 0,
@@ -41145,19 +41121,16 @@
           "conditions": {
             "pokemon.evolve.useItem": {
               "string": "pokemon.item.dusk_stone"
-            }
-          },
-          "fromForm": 0,
-          "toForm": 0
-        },
-        {
-          "to": 681,
-          "conditions": {
-            "pokemon.evolve.level": {
-              "number": 32
             },
-            "pokemon.evolve.typedPokemonPresentInParty": {
-              "string": "pokemon.type.dark"
+            "pokemon.evolve.or": {
+              "nested": {
+                "pokemon.evolve.level": {
+                  "number": 32
+                },
+                "pokemon.evolve.typedPokemonPresentInParty": {
+                  "string": "pokemon.type.dark"
+                }
+              }
             }
           },
           "fromForm": 0,
@@ -46741,16 +46714,13 @@
           "conditions": {
             "pokemon.evolve.knowMove": {
               "string": "pokemon.move.stomp"
-            }
-          },
-          "fromForm": 0,
-          "toForm": 0
-        },
-        {
-          "to": 773,
-          "conditions": {
-            "pokemon.evolve.useItem": {
-              "string": "pokemon.item.leaf_stone"
+            },
+            "pokemon.evolve.or": {
+              "nested": {
+                "pokemon.evolve.useItem": {
+                  "string": "pokemon.item.leaf_stone"
+                }
+              }
             }
           },
           "fromForm": 0,
@@ -49820,16 +49790,13 @@
           "conditions": {
             "pokemon.evolve.knowMove": {
               "string": "pokemon.move.dragon_pulse"
-            }
-          },
-          "fromForm": 0,
-          "toForm": 0
-        },
-        {
-          "to": 816,
-          "conditions": {
-            "pokemon.evolve.useItem": {
-              "string": "pokemon.item.sun_stone"
+            },
+            "pokemon.evolve.or": {
+              "nested": {
+                "pokemon.evolve.useItem": {
+                  "string": "pokemon.item.sun_stone"
+                }
+              }
             }
           },
           "fromForm": 0,
@@ -55327,16 +55294,13 @@
           "conditions": {
             "pokemon.evolve.knowMove": {
               "string": "pokemon.move.mimic"
-            }
-          },
-          "fromForm": 0,
-          "toForm": 0
-        },
-        {
-          "to": 122,
-          "conditions": {
-            "pokemon.evolve.useItem": {
-              "string": "pokemon.item.sun_stone"
+            },
+            "pokemon.evolve.or": {
+              "nested": {
+                "pokemon.evolve.useItem": {
+                  "string": "pokemon.item.sun_stone"
+                }
+              }
             }
           },
           "fromForm": 0,
