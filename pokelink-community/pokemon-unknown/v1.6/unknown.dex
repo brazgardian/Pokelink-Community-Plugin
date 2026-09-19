@@ -4308,17 +4308,6 @@
         {
           "to": 186,
           "conditions": {
-            "pokemon.evolve.hasItem": {
-              "string": "pokemon.item.kings_rock"
-            },
-            "pokemon.evolve.levelUp": {}
-          },
-          "fromForm": 0,
-          "toForm": 0
-        },
-        {
-          "to": 186,
-          "conditions": {
             "pokemon.evolve.useItem": {
               "string": "pokemon.item.kings_rock"
             }
@@ -4459,14 +4448,6 @@
       ],
       "growthRate": 3,
       "evolutions": [
-        {
-          "to": 65,
-          "conditions": {
-            "pokemon.evolve.levelUp": {}
-          },
-          "fromForm": 0,
-          "toForm": 0
-        },
         {
           "to": 65,
           "conditions": {
@@ -4650,14 +4631,6 @@
       ],
       "growthRate": 3,
       "evolutions": [
-        {
-          "to": 68,
-          "conditions": {
-            "pokemon.evolve.levelUp": {}
-          },
-          "fromForm": 0,
-          "toForm": 0
-        },
         {
           "to": 68,
           "conditions": {
@@ -5105,25 +5078,9 @@
         {
           "to": 76,
           "conditions": {
-            "pokemon.evolve.levelUp": {}
-          },
-          "fromForm": 0,
-          "toForm": 0
-        },
-        {
-          "to": 76,
-          "conditions": {
             "pokemon.evolve.useItem": {
               "string": "PokemonUnknown.Item.link_cable"
             }
-          },
-          "fromForm": 1,
-          "toForm": 1
-        },
-        {
-          "to": 76,
-          "conditions": {
-            "pokemon.evolve.levelUp": {}
           },
           "fromForm": 1,
           "toForm": 1
@@ -5492,17 +5449,6 @@
         {
           "to": 199,
           "conditions": {
-            "pokemon.evolve.hasItem": {
-              "string": "pokemon.item.kings_rock"
-            },
-            "pokemon.evolve.levelUp": {}
-          },
-          "fromForm": 0,
-          "toForm": 0
-        },
-        {
-          "to": 199,
-          "conditions": {
             "pokemon.evolve.useItem": {
               "string": "pokemon.item.kings_rock"
             }
@@ -5791,14 +5737,6 @@
         {
           "to": 463,
           "conditions": {
-            "pokemon.evolve.levelUp": {}
-          },
-          "fromForm": 0,
-          "toForm": 0
-        },
-        {
-          "to": 463,
-          "conditions": {
             "pokemon.evolve.useItem": {
               "string": "pokemon.item.thunder_stone"
             }
@@ -5854,14 +5792,6 @@
             "pokemon.evolve.friendship": {
               "string": "friendship.high"
             }
-          },
-          "fromForm": 1,
-          "toForm": 0
-        },
-        {
-          "to": 881,
-          "conditions": {
-            "pokemon.evolve.levelUp": {}
           },
           "fromForm": 1,
           "toForm": 0
@@ -6466,14 +6396,6 @@
         {
           "to": 94,
           "conditions": {
-            "pokemon.evolve.levelUp": {}
-          },
-          "fromForm": 0,
-          "toForm": 0
-        },
-        {
-          "to": 94,
-          "conditions": {
             "pokemon.evolve.useItem": {
               "string": "PokemonUnknown.Item.link_cable"
             }
@@ -6606,17 +6528,6 @@
       ],
       "growthRate": 0,
       "evolutions": [
-        {
-          "to": 208,
-          "conditions": {
-            "pokemon.evolve.hasItem": {
-              "string": "pokemon.item.metal_coat"
-            },
-            "pokemon.evolve.levelUp": {}
-          },
-          "fromForm": 0,
-          "toForm": 0
-        },
         {
           "to": 208,
           "conditions": {
@@ -7669,17 +7580,6 @@
           },
           "fromForm": 0,
           "toForm": 0
-        },
-        {
-          "to": 465,
-          "conditions": {
-            "pokemon.evolve.hasItem": {
-              "string": "pokemon.item.protector"
-            },
-            "pokemon.evolve.levelUp": {}
-          },
-          "fromForm": 0,
-          "toForm": 0
         }
       ],
       "__import": {
@@ -7956,17 +7856,6 @@
       ],
       "growthRate": 0,
       "evolutions": [
-        {
-          "to": 230,
-          "conditions": {
-            "pokemon.evolve.hasItem": {
-              "string": "pokemon.item.dragon_scale"
-            },
-            "pokemon.evolve.levelUp": {}
-          },
-          "fromForm": 0,
-          "toForm": 0
-        },
         {
           "to": 230,
           "conditions": {
@@ -8299,17 +8188,6 @@
         {
           "to": 212,
           "conditions": {
-            "pokemon.evolve.hasItem": {
-              "string": "pokemon.item.metal_coat"
-            },
-            "pokemon.evolve.levelUp": {}
-          },
-          "fromForm": 0,
-          "toForm": 0
-        },
-        {
-          "to": 212,
-          "conditions": {
             "pokemon.evolve.useItem": {
               "string": "pokemon.item.metal_coat"
             }
@@ -8421,17 +8299,6 @@
           },
           "fromForm": 0,
           "toForm": 0
-        },
-        {
-          "to": 467,
-          "conditions": {
-            "pokemon.evolve.hasItem": {
-              "string": "pokemon.item.electirizer"
-            },
-            "pokemon.evolve.levelUp": {}
-          },
-          "fromForm": 0,
-          "toForm": 0
         }
       ],
       "__import": {
@@ -8474,17 +8341,6 @@
       ],
       "growthRate": 0,
       "evolutions": [
-        {
-          "to": 468,
-          "conditions": {
-            "pokemon.evolve.hasItem": {
-              "string": "pokemon.item.magmarizer"
-            },
-            "pokemon.evolve.levelUp": {}
-          },
-          "fromForm": 0,
-          "toForm": 0
-        },
         {
           "to": 468,
           "conditions": {
@@ -9120,17 +8976,6 @@
             "pokemon.evolve.useItem": {
               "string": "pokemon.item.upgrade"
             }
-          },
-          "fromForm": 0,
-          "toForm": 0
-        },
-        {
-          "to": 233,
-          "conditions": {
-            "pokemon.evolve.hasItem": {
-              "string": "pokemon.item.upgrade"
-            },
-            "pokemon.evolve.levelUp": {}
           },
           "fromForm": 0,
           "toForm": 0
@@ -10328,7 +10173,7 @@
           },
           "abilities": [
             "pokemon.ability.blaze",
-            "pokemon.ability.intimidate",
+            "pokemon.ability.frisk",
             "pokemon.ability.flash_fire"
           ],
           "hatchCycles": 20,
@@ -15349,17 +15194,6 @@
         {
           "to": 475,
           "conditions": {
-            "pokemon.evolve.hasItem": {
-              "string": "pokemon.item.dubious_disc"
-            },
-            "pokemon.evolve.levelUp": {}
-          },
-          "fromForm": 0,
-          "toForm": 0
-        },
-        {
-          "to": 475,
-          "conditions": {
             "pokemon.evolve.useItem": {
               "string": "pokemon.item.dubious_disc"
             }
@@ -18543,14 +18377,6 @@
         {
           "to": 477,
           "conditions": {
-            "pokemon.evolve.levelUp": {}
-          },
-          "fromForm": 0,
-          "toForm": 0
-        },
-        {
-          "to": 477,
-          "conditions": {
             "pokemon.evolve.useItem": {
               "string": "pokemon.item.thunder_stone"
             }
@@ -18950,28 +18776,9 @@
         {
           "to": 304,
           "conditions": {
-            "pokemon.evolve.levelUp": {}
-          },
-          "fromForm": 0,
-          "toForm": 0
-        },
-        {
-          "to": 304,
-          "conditions": {
             "pokemon.evolve.useItem": {
               "string": "pokemon.item.prism_scale"
             }
-          },
-          "fromForm": 0,
-          "toForm": 0
-        },
-        {
-          "to": 304,
-          "conditions": {
-            "pokemon.evolve.hasItem": {
-              "string": "pokemon.item.prism_scale"
-            },
-            "pokemon.evolve.levelUp": {}
           },
           "fromForm": 0,
           "toForm": 0
@@ -20842,17 +20649,6 @@
           },
           "fromForm": 0,
           "toForm": 0
-        },
-        {
-          "to": 478,
-          "conditions": {
-            "pokemon.evolve.hasItem": {
-              "string": "pokemon.item.reaper_cloth"
-            },
-            "pokemon.evolve.levelUp": {}
-          },
-          "fromForm": 0,
-          "toForm": 0
         }
       ],
       "__import": {
@@ -21379,28 +21175,6 @@
             "pokemon.evolve.useItem": {
               "string": "pokemon.item.deep_sea_scale"
             }
-          },
-          "fromForm": 0,
-          "toForm": 0
-        },
-        {
-          "to": 349,
-          "conditions": {
-            "pokemon.evolve.hasItem": {
-              "string": "pokemon.item.deep_sea_tooth"
-            },
-            "pokemon.evolve.levelUp": {}
-          },
-          "fromForm": 0,
-          "toForm": 0
-        },
-        {
-          "to": 350,
-          "conditions": {
-            "pokemon.evolve.hasItem": {
-              "string": "pokemon.item.deep_sea_scale"
-            },
-            "pokemon.evolve.levelUp": {}
           },
           "fromForm": 0,
           "toForm": 0
@@ -30611,8 +30385,8 @@
           },
           "abilities": [
             "pokemon.ability.torrent",
-            "pokemon.ability.justified",
-            "pokemon.ability.intrepid_sword"
+            "",
+            "pokemon.ability.shell_armor"
           ],
           "hatchCycles": 20,
           "genderRatio": 31,
@@ -31644,14 +31418,6 @@
           },
           "fromForm": 0,
           "toForm": 0
-        },
-        {
-          "to": 527,
-          "conditions": {
-            "pokemon.evolve.levelUp": {}
-          },
-          "fromForm": 0,
-          "toForm": 0
         }
       ],
       "__import": {
@@ -32052,14 +31818,6 @@
       ],
       "growthRate": 3,
       "evolutions": [
-        {
-          "to": 535,
-          "conditions": {
-            "pokemon.evolve.levelUp": {}
-          },
-          "fromForm": 0,
-          "toForm": 0
-        },
         {
           "to": 535,
           "conditions": {
@@ -33729,14 +33487,6 @@
           },
           "fromForm": 1,
           "toForm": 0
-        },
-        {
-          "to": 883,
-          "conditions": {
-            "pokemon.evolve.levelUp": {}
-          },
-          "fromForm": 1,
-          "toForm": 0
         }
       ],
       "__import": {
@@ -35350,14 +35100,6 @@
           },
           "fromForm": 0,
           "toForm": 0
-        },
-        {
-          "to": 590,
-          "conditions": {
-            "pokemon.evolve.levelUp": {}
-          },
-          "fromForm": 0,
-          "toForm": 0
         }
       ],
       "__import": {
@@ -36652,14 +36394,6 @@
             "pokemon.evolve.useItem": {
               "string": "PokemonUnknown.Item.link_cable"
             }
-          },
-          "fromForm": 0,
-          "toForm": 0
-        },
-        {
-          "to": 618,
-          "conditions": {
-            "pokemon.evolve.levelUp": {}
           },
           "fromForm": 0,
           "toForm": 0
@@ -42248,17 +41982,6 @@
           },
           "fromForm": 0,
           "toForm": 0
-        },
-        {
-          "to": 689,
-          "conditions": {
-            "pokemon.evolve.hasItem": {
-              "string": "pokemon.item.sachet"
-            },
-            "pokemon.evolve.levelUp": {}
-          },
-          "fromForm": 0,
-          "toForm": 0
         }
       ],
       "__import": {
@@ -42347,17 +42070,6 @@
             "pokemon.evolve.useItem": {
               "string": "pokemon.item.whipped_dream"
             }
-          },
-          "fromForm": 0,
-          "toForm": 0
-        },
-        {
-          "to": 691,
-          "conditions": {
-            "pokemon.evolve.hasItem": {
-              "string": "pokemon.item.whipped_dream"
-            },
-            "pokemon.evolve.levelUp": {}
           },
           "fromForm": 0,
           "toForm": 0
@@ -43363,7 +43075,7 @@
           "baseStats": {
             "hp": 58,
             "atk": 75,
-            "def": 73,
+            "def": 83,
             "spAtk": 83,
             "spDef": 113,
             "spd": 40
@@ -43555,14 +43267,6 @@
         {
           "to": 715,
           "conditions": {
-            "pokemon.evolve.levelUp": {}
-          },
-          "fromForm": 0,
-          "toForm": 0
-        },
-        {
-          "to": 715,
-          "conditions": {
             "pokemon.evolve.useItem": {
               "string": "PokemonUnknown.Item.link_cable"
             }
@@ -43656,28 +43360,12 @@
         {
           "to": 717,
           "conditions": {
-            "pokemon.evolve.levelUp": {}
-          },
-          "fromForm": 0,
-          "toForm": 0
-        },
-        {
-          "to": 717,
-          "conditions": {
             "pokemon.evolve.useItem": {
               "string": "PokemonUnknown.Item.link_cable"
             }
           },
           "fromForm": 0,
           "toForm": 0
-        },
-        {
-          "to": 717,
-          "conditions": {
-            "pokemon.evolve.levelUp": {}
-          },
-          "fromForm": 3,
-          "toForm": 3
         },
         {
           "to": 717,
@@ -43692,28 +43380,12 @@
         {
           "to": 717,
           "conditions": {
-            "pokemon.evolve.levelUp": {}
-          },
-          "fromForm": 2,
-          "toForm": 2
-        },
-        {
-          "to": 717,
-          "conditions": {
             "pokemon.evolve.useItem": {
               "string": "PokemonUnknown.Item.link_cable"
             }
           },
           "fromForm": 2,
           "toForm": 2
-        },
-        {
-          "to": 717,
-          "conditions": {
-            "pokemon.evolve.levelUp": {}
-          },
-          "fromForm": 4,
-          "toForm": 4
         },
         {
           "to": 717,
@@ -45016,7 +44688,7 @@
           },
           "abilities": [
             "pokemon.ability.overgrow",
-            "pokemon.ability.aerilate",
+            "",
             "pokemon.ability.scrappy"
           ],
           "hatchCycles": 15,
@@ -45645,14 +45317,6 @@
         {
           "to": 748,
           "conditions": {
-            "pokemon.evolve.levelUp": {}
-          },
-          "fromForm": 0,
-          "toForm": 0
-        },
-        {
-          "to": 748,
-          "conditions": {
             "pokemon.evolve.useItem": {
               "string": "pokemon.item.thunder_stone"
             }
@@ -45742,14 +45406,6 @@
       ],
       "growthRate": 0,
       "evolutions": [
-        {
-          "to": 750,
-          "conditions": {
-            "pokemon.evolve.levelUp": {}
-          },
-          "fromForm": 0,
-          "toForm": 0
-        },
         {
           "to": 750,
           "conditions": {
@@ -52526,26 +52182,6 @@
           },
           "fromForm": 0,
           "toForm": 1
-        },
-        {
-          "to": 865,
-          "conditions": {
-            "pokemon.evolve.nature": {
-              "string": "nature.high"
-            }
-          },
-          "fromForm": 0,
-          "toForm": 0
-        },
-        {
-          "to": 865,
-          "conditions": {
-            "pokemon.evolve.nature": {
-              "string": "nature.low"
-            }
-          },
-          "fromForm": 0,
-          "toForm": 1
         }
       ],
       "__import": {
@@ -57290,7 +56926,7 @@
       },
       "abilities": [
         "pokemon.ability.pressure",
-        "pokemon.ability.pressure",
+        "pokemon.ability.unburden",
         "pokemon.ability.poison_touch"
       ],
       "hatchCycles": 20,
@@ -57392,47 +57028,6 @@
     },
     {
       "id": 967,
-      "name": "PokemonUnknown.Species.lugia_s",
-      "__import": {
-        "pokelink:/pokemon/national/249.entry": {
-          "FIXME_noDeepMerge": true
-        }
-      },
-      "gameId": 1288,
-      "baseStats": {
-        "hp": 106,
-        "atk": 130,
-        "def": 90,
-        "spAtk": 154,
-        "spDef": 90,
-        "spd": 110
-      },
-      "baseFriendship": 0,
-      "evYield": {
-        "hp": 0,
-        "atk": 0,
-        "def": 0,
-        "spAtk": 0,
-        "spDef": 3,
-        "spd": 0
-      },
-      "abilities": [
-        "pokemon.ability.pressure",
-        "",
-        "pokemon.ability.multiscale"
-      ],
-      "hatchCycles": 120,
-      "genderRatio": 255,
-      "catchRate": 3,
-      "types": [
-        "pokemon.type.dark",
-        "pokemon.type.flying"
-      ],
-      "growthRate": 5,
-      "evolutions": []
-    },
-    {
-      "id": 968,
       "name": "pokemon.species.enamorus",
       "gameId": 1293,
       "baseStats": {
